@@ -23,6 +23,35 @@ const insertOneUser = (newUser) => {
   return newUser;
 };
 
+const updateOneUser = (id, name, mail, pwd) => {
+  console.log(id);
+  const userToBeUpdatedIndex = datos.users.findIndex((objeto) => {
+    return objeto.idUser === id;
+  });
+  console.log(name);
+  console.log(datos.users[userToBeUpdatedIndex]);
+  if (name) {
+    datos.users[userToBeUpdatedIndex].nombre = name;
+  }
+  console.log(mail);
+
+  if (mail) {
+    datos.users[userToBeUpdatedIndex].mail = mail;
+  }
+
+  if (pwd) {
+    datos.users[userToBeUpdatedIndex].pwd = pwd;
+  }
+
+  fs.writeFile(
+    "./src/database/users.json",
+    JSON.stringify(datos, null, 2),
+    "utf8",
+    (err) => {
+      throw new Error("ERROR AL BORRAR USUARIO");
+    }
+  );
+};
 const deleteOneUser = (id) => {
   var usuarioDeleted = datos.users.find((objeto) => {
     return objeto.id === id;
@@ -54,4 +83,5 @@ module.exports = {
   getOneUser,
   insertOneUser,
   deleteOneUser,
+  updateOneUser,
 };

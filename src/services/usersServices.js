@@ -36,7 +36,15 @@ const deleteOneUser = (id) => {
   return user;
 };
 
-const updateOneUser = () => {};
+const updateOneUser = (id, nombre, mail, pwd) => {
+  console.log(id);
+  console.log(nombre);
+  console.log(mail);
+  console.log(pwd);
+  const user = userModelos.updateOneUser(id, nombre, mail, pwd);
+  console.log(user);
+  return user;
+};
 
 module.exports = {
   getUsers,

@@ -5,6 +5,18 @@
       "nombre": "puta",
       "mail": "meCorro@gmail.com",
       "pwd": "puta"
+    },
+    {
+      "idUser": "48a04480-a6f3-11ed-9765-81a6d4d08d38",
+      "nombre": "guarrilla",
+      "mail": "pruebapatch@gmail.com",
+      "pwd": "prueba2"
+    },
+    {
+      "idUser": "5ae87180-a6f3-11ed-bf15-6fe95562dcaf",
+      "nombre": "maria",
+      "mail": "marihuana@gmail.com",
+      "pwd": "4243"
     }
   ]
 }

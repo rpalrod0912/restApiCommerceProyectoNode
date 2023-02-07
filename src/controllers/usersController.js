@@ -53,7 +53,16 @@ const deleteUser = (req, res, next) => {
 };
 
 const updateUser = (req, res, next) => {
-  res.send("UPDATED users");
+  const { id } = req.params;
+  const { nombre, mail, pwd } = req.body;
+  console.log(req.body);
+  console.log(nombre);
+  console.log(mail);
+  console.log(pwd);
+
+  const updateUser = usersServices.updateOneUser(id, nombre, mail, pwd);
+
+  res.send(updateUser);
 };
 
 module.exports = {
