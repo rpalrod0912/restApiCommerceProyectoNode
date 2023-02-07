@@ -1,33 +1,201 @@
 {
   "productos": {
-    "cereales": {
-      "nombre": "Cereales",
-      "precio": 3.45
+    "AirForce1": {
+      "id": "product1",
+      "nombre": "Air Force 1",
+      "descripcion": "El fulgor sigue vivo con un diseño de baloncesto original. Con un diseño que combina la comodidad para la cancha con un estilo urbano, estas zapatillas dan un nuevo giro a su ya característico estilo, su confección inspirada en los 80, sus detalles llamativos y su estilo impecable.",
+      "precio": 120,
+      "tipo": "Zapatos",
+      "categoria": "Deportivas",
+      "utilidad": "Casual",
+      "marca": "Nike",
+      "sexo": "Unisex",
+      "color": ["blanco", "negro"],
+      "talla": [
+        38.5, 39, 40, 40.5, 41, 42, 42.5, 42, 44, 44.5, 45, 45.5, 46, 47, 47.5,
+        48.5, 48, 49.5
+      ],
+      "imagen": "https://i.ibb.co/D55f9QN/af1.png"
     },
-    "colacao": {
-      "nombre": "Colacao",
-      "precio": 1.45
+    "Jordan1": {
+      "id": "product2",
+      "nombre": "Air Jordan 1",
+      "descripcion": "Este modelo reúne el diseño clásico de las AJ1 y los colores originales de las AJ3 para celebrar el 35 cumpleaños de las Air Jordan 3. El diseño se inspira en las zapatillas del 85: piel premium, una zona del tobillo de perfil alto y la etiqueta cosida tan popular de la lengüeta. ",
+      "precio": 140,
+      "tipo": "Zapatos",
+      "categoria": "Deportivas",
+      "utilidad": "Baloncesto",
+      "marca": "Nike",
+      "sexo": "Unisex",
+      "color": ["Rojo/Blanco", "Azul/Negro", "Blanco", "Negro"],
+      "talla": [37, 37.5, 38, 40],
+      "imagen": "https://i.ibb.co/PhQVSy1/jordan1.png"
     },
-    "aguamineral": {
-      "nombre": "Agua mineral",
-      "precio": 1
+    "ForumLow": {
+      "id": "product3",
+      "nombre": "Forum Low",
+      "descripcion": "¿No sabes aún de lo que eres capaz? Cálzate esta zapatilla adidas Forum y descúbrelo por tu cuenta. Desde 1984, es un símbolo de la expresión personal, la superación y de lo que puedes conseguir trabajando duro. Esta versión luce un diseño con los colores clásicos que podría lucir cualquier equipo en la cancha y que nos recuerda que no estaríamos donde estamos sin la ayuda de los demás. La parte superior de piel blanca y los detalles en contraste conservan intacto el legado de la Forum.",
+      "precio": 100,
+      "tipo": "Zapatos",
+      "categoria": "Deportivas",
+      "utilidad": "Baloncesto",
+      "marca": "Adidas",
+      "sexo": "Unisex",
+      "color": [
+        "Rojo/Blanco",
+        "Azul/Blanco",
+        "Blanco/Negro",
+        "Blanco/Verde",
+        "Blanco",
+        "Negro"
+      ],
+      "talla": [
+        38.5, 39, 40, 40.5, 41, 42, 42.5, 42, 44, 44.5, 45, 45.5, 46, 47, 47.5,
+        48.5, 48, 49.5
+      ],
+      "imagen": "https://i.ibb.co/7QRzLZJ/ForumLow.png"
     },
-    "prueba": {
-      "nombre": "prueba",
-      "precio": "2",
-      "fecha": "2023-01-22T22:12:48.091Z"
+    "Yeezy": {
+      "id": "product4",
+      "nombre": "Yeezy Boost 350 V2",
+      "descripcion": "Yeezy Boost 350 V2 es un modelo ultramoderno que conserva los elementos que hacen de esta zapatilla una de las más populares del momento, y viene acompañada con colores contrastados y atractivos, que generalmente suelen ser muy exclusivos. Conseguir una zapatilla de este modelo de la línea Yeezy de Kanye West siempre ha sido algo complicado, por lo que vas a necesitar un poco de suerte o participar en algunos raflles para poder conseguir esta silueta a precio retail. ",
+      "precio": 305,
+      "tipo": "Zapatos",
+      "categoria": "Deportivas",
+      "utilidad": "Running",
+      "marca": "Adidas",
+      "sexo": "Unisex",
+      "color": ["Blanco", "Negro"],
+      "talla": [
+        38.5, 39, 40, 40.5, 41, 42, 42.5, 42, 44, 44.5, 45, 45.5, 46, 47, 47.5,
+        48.5, 48, 49.5
+      ],
+      "imagen": "https://i.ibb.co/Ypmbs69/Yeezy.png"
     },
-    "monster": {
-      "nombre": "monster",
-      "precio": "3",
-      "fecha": "2023-01-22T22:13:45.531Z"
+    "NewBalance550": {
+      "id": "product5",
+      "nombre": "New Balanace 550",
+      "descripcion": "El regreso de una leyenda. Originalmente usada por los profesionales, la nueva 550 rinde homenaje a la original de 1989 con detalles clásicos evocadores de la época: sencilla, clara y fiel a su legado.",
+      "precio": 150,
+      "tipo": "Zapatos",
+      "categoria": "Deportivas",
+      "utilidad": "Casual",
+      "marca": "NewBalance",
+      "sexo": "Unisex",
+      "color": [
+        "Blanco/Negro",
+        "Blanco/Rosa",
+        "Blanco/AzulClaro",
+        "Blanco/Verde",
+        "Blanco/Gris"
+      ],
+      "talla": [38.5, 39, 44.5, 45, 45.5, 46, 47, 47.5, 48.5, 48, 49.5, 50],
+      "imagen": "https://i.ibb.co/rdmhhGf/New-Balance550.png"
     },
-    "Coca Cola": {
-      "nombre": "Coca Cola",
-      "precio": 1.5,
-      "idProducto": "d05f9ea0-a14b-11ed-937e-21f9d46abcac",
-      "fecha_alta": "31/1/2023",
-      "fecha_cad": "31/1/2025"
+    "Galaxy6": {
+      "id": "product6",
+      "nombre": "Adidas Galaxy 6",
+      "descripcion": "Listo para tu siguiente aventura. Esta zapatilla de running adidas te ofrece la comodidad que buscas para salir a correr a cualquier hora del día. Presenta una parte superior de malla ligera y transpirable que mantiene tus pies frescos y una mediasuela Cloudfoam que te proporciona una pisada más cómoda. La suela de goma brinda un agarre excelente en suelo seco y mojado. Podrás cambiar de planes sin cambiar de zapatillas.",
+      "precio": 50,
+      "tipo": "Zapatos",
+      "categoria": "Deportivas",
+      "utilidad": "Running",
+      "marca": "Adidas",
+      "sexo": "Unisex",
+      "color": [
+        "Blanco/Negro",
+        "Blanco/Rosa",
+        "Blanco/AzulClaro",
+        "Blanco/Verde",
+        "Blanco/Gris"
+      ],
+      "talla": [38.5, 39, 44.5, 45, 45.5, 46, 47, 47.5, 48.5, 48, 49.5, 50],
+      "imagen": "https://i.ibb.co/Wy49mwF/eac24c2f11924b109410ae890008cb01-9366.webp"
+    },
+    "SudaderaAdidasOriginals": {
+      "id": "product7",
+      "nombre": "Sudadera adidas Originals",
+      "descripcion": "Las leyendas siempre evolucionan. Y esta sudadera con capucha es un claro ejemplo de ello. Su diseño da un nuevo sentido a las líneas más emblemáticas de adidas. Se ha confeccionado en una suave mezcla de algodón y felpa, y cuenta con detalles de canalé que te ofrecen una gran comodidad.",
+      "precio": 50,
+      "tipo": "Sudadera",
+      "categoria": "Deportivas",
+      "utilidad": "Casual",
+      "marca": "Adidas",
+      "sexo": "Unisex",
+      "color": ["Gris", "Negro", "Blanco", "Negro", "Rosa", "Azul"],
+      "talla": ["S", "M", "L", "XL"],
+      "imagen": "https://i.ibb.co/HpB4hpV/sudadera-Adidas-Or.png"
+    },
+    "SudaderAdidasCRedondo": {
+      "id": "product8",
+      "nombre": "Sudadera Nike SB Icon",
+      "descripcion": "La sudadera con capucha Nike SB Icon para hombre combina la comodidad informal de una sudadera de chándal con capucha con la suavidad del tejido Fleece cepillado. Es perfecta para el día a día.",
+      "precio": 32.47,
+      "tipo": "Sudadera",
+      "categoria": "Deportivas",
+      "utilidad": "Casual",
+      "marca": "Nike",
+      "sexo": "Hombre",
+      "color": ["Negro"],
+      "talla": ["S", "M", "XL"],
+      "imagen": "https://i.ibb.co/j6Qp4YV/Sud-Nike-SBIcon.png"
+    },
+    "SudaderaAdidasCuelloRedondo": {
+      "id": "product9",
+      "nombre": "Sudadera Nike SB Icon",
+      "descripcion": "Derrocha estilo clásico. Solo tienes que ponerte esta sudadera adidas de cuello redondo. Con un diseño tan perfecto como este, no necesitas mucho más para llamar la atención. El discreto logotipo del trébol completa este look cómodo y minimalista",
+      "precio": 55.4,
+      "tipo": "Sudadera",
+      "categoria": "Deportivas",
+      "utilidad": "Casual",
+      "marca": "Nike",
+      "sexo": "Unisex",
+      "color": ["Negro"],
+      "talla": ["S", "M"],
+      "imagen": "https://i.ibb.co/kyWyB3P/sudera-ADidas-Cuello-Redondo.png"
+    },
+    "pantalonNikeVerde": {
+      "id": "product10",
+      "nombre": "Chandal Nike Básico",
+      "descripcion": "El chándal Nike Sportswear Sport Essentials ofrece un look deportivo perfecto para el día a día. Confeccionado con un suave tejido Knit de poliéster, esta combinación informal ofrece un look perfecto.",
+      "precio": 68.99,
+      "tipo": "Sudadera",
+      "categoria": "Deportivas",
+      "utilidad": "Casual",
+      "marca": "Nike",
+      "sexo": "Hombre",
+      "color": ["Verde"],
+      "talla": ["M", "L"],
+      "imagen": "https://i.ibb.co/4ZJ6rvP/chandal-Nike-VErde.png"
+    },
+    "conjuntoNike": {
+      "id": "product11",
+      "nombre": "Chandal Nike Básico",
+      "descripcion": "El chándal Nike Sportswear cuenta con un estilo clásico. La clásica combinación incluye una chaqueta con cremallera completa y un pantalón versátiles que se pueden llevar juntos o por separado. ¡Tú decides! Además, está confeccionado con un tejido suave para ofrecer comodidad durante todo el día.",
+      "precio": 130.99,
+      "tipo": "Sudadera",
+      "tipo2": "Pantalon",
+      "categoria": "Deportivas",
+      "utilidad": "Running",
+      "marca": "Nike",
+      "sexo": "Hombre",
+      "color": ["Azul"],
+      "talla": ["S", "M", "XL"],
+      "imagen": "https://i.ibb.co/4WCpxHX/Conjunto-Nike.png"
+    },
+    "sudaderaRojaAd": {
+      "id": "product12",
+      "nombre": "Chandal Aidas Red",
+      "descripcion": "Se ha dicho que adidas lanzó el primer chándal en 1964. No podemos confirmarlo, pero sí sabemos con certeza que las 3 bandas han estado presentes en estadios, canchas y aceras durante décadas. Ha sido la chaqueta favorita de futbolistas y amantes de la música. Ahora también será la tuya. Luce un diseño cómodo confeccionado en Parley Ocean Plastic, un hilo creado a partir de residuos plásticos.",
+      "precio": 49.99,
+      "tipo": "Sudadera",
+      "categoria": "Deportivas",
+      "utilidad": "Casual",
+      "marca": "Nike",
+      "sexo": "Unisex",
+      "color": ["Rojo"],
+      "talla": ["L", "XL"],
+      "imagen": "https://i.ibb.co/RBgPstx/sudadera-Roja-Adidas.png"
     }
   }
 }
