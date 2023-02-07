@@ -1,0 +1,33 @@
+{
+  "productos": {
+    "cereales": {
+      "nombre": "Cereales",
+      "precio": 3.45
+    },
+    "colacao": {
+      "nombre": "Colacao",
+      "precio": 1.45
+    },
+    "aguamineral": {
+      "nombre": "Agua mineral",
+      "precio": 1
+    },
+    "prueba": {
+      "nombre": "prueba",
+      "precio": "2",
+      "fecha": "2023-01-22T22:12:48.091Z"
+    },
+    "monster": {
+      "nombre": "monster",
+      "precio": "3",
+      "fecha": "2023-01-22T22:13:45.531Z"
+    },
+    "Coca Cola": {
+      "nombre": "Coca Cola",
+      "precio": 1.5,
+      "idProducto": "d05f9ea0-a14b-11ed-937e-21f9d46abcac",
+      "fecha_alta": "31/1/2023",
+      "fecha_cad": "31/1/2025"
+    }
+  }
+}
