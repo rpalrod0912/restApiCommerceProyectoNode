@@ -30,7 +30,11 @@ const getUser = (idUser) => {
   return oneUsuario;
 };
 
-const deleteOneUser = () => {};
+const deleteOneUser = (id) => {
+  console.log(id);
+  const user = userModelos.deleteOneUser(id);
+  return user;
+};
 
 const updateOneUser = () => {};
 

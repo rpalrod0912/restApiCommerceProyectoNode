@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "id": "61dbae02-c147-4e28-863c-db7bd402b2d7",
-      "name": "Gonzalo",
-      "email": "gonz@gmail.com",
-      "password": "1234567890"
-    },
-    {
       "idUser": "c113eee0-a6d4-11ed-bd56-b5715859c8df",
       "nombre": "puta",
       "mail": "meCorro@gmail.com",

@@ -11,7 +11,10 @@ const getAllUsers = (req, res, next) => {
 
 const insertOneUser = (req, res, next) => {
   console.log(req.body);
+  console.log(req.body);
+
   const { name, email, password } = req.body;
+  console.log(name);
   if (!name || !email || !password) {
     res.status(400).send("FALTAN DATOS PORA INSERTAR USUARIIOS");
     return;
@@ -38,7 +41,15 @@ const getOneUser = (req, res, next) => {
 };
 
 const deleteUser = (req, res, next) => {
-  res.send("BORRAR usuario");
+  const { id } = req.params;
+  //console.log(id);
+  const deletedUser = usersServices.deleteOneUser(id);
+  //console.log(deletedUser);
+  if (!deletedUser) {
+    res.status(404).send("USUARIO NO ENCONTRADO");
+    return;
+  }
+  res.send(deletedUser);
 };
 
 const updateUser = (req, res, next) => {
