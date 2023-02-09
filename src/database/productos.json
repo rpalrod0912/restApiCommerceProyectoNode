@@ -12,10 +12,7 @@
       "marca": "Nike",
       "sexo": "Unisex",
       "color": ["Blanco", "Negro"],
-      "talla": [
-        38.5, 39, 40, 40.5, 41, 42, 42.5, 42, 44, 44.5, 45, 45.5, 46, 47, 47.5,
-        48.5, 48, 49.5
-      ],
+      "talla": [35, 38, 39, 40, 40.5, 41, 42, 44, 45, 46, 47, 48, 49],
       "imagen": "https://i.ibb.co/D55f9QN/af1.png"
     },
     {
@@ -29,7 +26,7 @@
       "marca": "Nike",
       "sexo": "Unisex",
       "color": ["Rojo", "Blanco", "Azul", "Negro", "Blanco", "Negro"],
-      "talla": [37, 37.5, 38, 40],
+      "talla": [37, 36, 38, 40],
       "imagen": "https://i.ibb.co/PhQVSy1/jordan1.png"
     },
     {
@@ -56,8 +53,7 @@
         "Negro"
       ],
       "talla": [
-        38.5, 39, 40, 40.5, 41, 42, 42.5, 42, 44, 44.5, 45, 45.5, 46, 47, 47.5,
-        48.5, 48, 49.5
+        38, 39, 40, 40, 41, 42, 42, 42, 44, 44, 45, 45, 46, 47, 47, 48, 48, 49
       ],
       "imagen": "https://i.ibb.co/7QRzLZJ/ForumLow.png"
     },
@@ -73,8 +69,7 @@
       "sexo": "Unisex",
       "color": ["Blanco", "Negro"],
       "talla": [
-        38.5, 39, 40, 40.5, 41, 42, 42.5, 42, 44, 44.5, 45, 45.5, 46, 47, 47.5,
-        48.5, 48, 49.5
+        38, 39, 40, 40, 41, 42, 42, 42, 44, 44, 45, 45, 46, 47, 47, 48, 48, 49
       ],
       "imagen": "https://i.ibb.co/Ypmbs69/Yeezy.png"
     },
@@ -90,7 +85,7 @@
       "marca": "NewBalance",
       "sexo": "Unisex",
       "color": ["Negro", "Blanco", "Rosa", "Azul", "Verde", "Gris"],
-      "talla": [38.5, 39, 44.5, 45, 45.5, 46, 47, 47.5, 48.5, 48, 49.5, 50],
+      "talla": [38, 39, 44, 45, 45, 46, 47, 47, 48, 48, 49, 50],
       "imagen": "https://i.ibb.co/rdmhhGf/New-Balance550.png"
     },
     {
@@ -104,7 +99,7 @@
       "marca": "Adidas",
       "sexo": "Unisex",
       "color": ["Negro", "Blanco", "AzulClaro", "Verde", "Gris"],
-      "talla": [38.5, 39, 44.5, 45, 45.5, 46, 47, 47.5, 48.5, 48, 49.5, 50],
+      "talla": [38, 39, 44, 45, 45, 46, 47, 47, 48, 48, 49, 50],
       "imagen": "https://i.ibb.co/Wy49mwF/eac24c2f11924b109410ae890008cb01-9366.webp"
     },
     {

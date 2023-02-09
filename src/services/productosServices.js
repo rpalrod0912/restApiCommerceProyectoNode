@@ -18,6 +18,11 @@ const getSaleProducts = () => {
   return saleProducts;
 };
 
+const getSizesProducts = () => {
+  const sizesProducts = productosModelo.getSizeOrderProducts();
+  return sizesProducts;
+};
+
 const insertOneProduct = (nombre, precio) => {
   const idProducto = uuid();
   const fecha_alta = new Date().toLocaleDateString();
@@ -58,4 +63,5 @@ module.exports = {
   updateOneProduct,
   getSaleProducts,
   getColorsProducts,
+  getSizesProducts,
 };

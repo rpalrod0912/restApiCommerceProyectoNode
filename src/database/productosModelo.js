@@ -7,6 +7,66 @@ const getAllProduct = () => {
   return datos.productos;
 };
 
+const getSizeOrderProducts = () => {
+  let tallasArr = {
+    35: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(35);
+    }),
+    36: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(36);
+    }),
+    37: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(37);
+    }),
+    38: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(38);
+    }),
+    39: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(39);
+    }),
+    40: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(40);
+    }),
+    41: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(41);
+    }),
+    42: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(42);
+    }),
+    43: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(43);
+    }),
+    44: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(44);
+    }),
+    45: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(45);
+    }),
+    46: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(46);
+    }),
+    47: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(47);
+    }),
+    48: datos.productos.filter((objeto) => {
+      return objeto.talla.includes(48);
+    }),
+    S: datos.productos.filter((objeto) => {
+      return objeto.talla.includes("S");
+    }),
+    M: datos.productos.filter((objeto) => {
+      return objeto.talla.includes("M");
+    }),
+    L: datos.productos.filter((objeto) => {
+      return objeto.talla.includes("L");
+    }),
+    XL: datos.productos.filter((objeto) => {
+      return objeto.talla.includes("XL");
+    }),
+  };
+  return tallasArr;
+};
+
 const getColorOrderProducts = () => {
   let colorsArr = {
     Blanco: datos.productos.filter((objeto) => {
@@ -61,4 +121,5 @@ module.exports = {
   insertOneProduct,
   getSaleProducts,
   getColorOrderProducts,
+  getSizeOrderProducts,
 };
