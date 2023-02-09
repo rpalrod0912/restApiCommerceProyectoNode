@@ -9,8 +9,11 @@ router
 
 router
   .route("/:id")
-  .get(usersController.getOneUser)
+  /*
+  .get(usersController.getOneUser)*/
   .delete(usersController.deleteUser)
   .patch(usersController.updateUser);
+
+router.route("/:mail").get(usersController.getOneUserByMail);
 
 module.exports.router = router;

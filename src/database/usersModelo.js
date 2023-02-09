@@ -9,6 +9,16 @@ const getOneUser = (idUser) => {
   return datos.users[idUser];
 };
 
+const oneUserByMail = (mailUser) => {
+  console.log(mailUser);
+  var userByMail = datos.users.find((objeto) => {
+    return objeto.mail === mailUser;
+  });
+
+  console.log(userByMail);
+  return userByMail;
+};
+
 const insertOneUser = (newUser) => {
   datos.users.push(newUser);
   console.log(newUser);
@@ -84,4 +94,5 @@ module.exports = {
   insertOneUser,
   deleteOneUser,
   updateOneUser,
+  oneUserByMail,
 };

@@ -30,9 +30,21 @@ const insertOneUser = (req, res, next) => {
 };
 
 const getOneUser = (req, res, next) => {
-  const { usuario } = req.params;
+  const { mail } = req.params;
+  console.log(req.params);
 
-  const oneUser = usersServices.getUser(usuario.id);
+  const oneUser = usersServices.getUser(mail);
+  if (!oneUser) {
+    res.status(404).send("NO ENCONTRADO");
+    return;
+  }
+  res.send(oneUser);
+};
+const getOneUserByMail = (req, res, next) => {
+  const { mail } = req.params;
+  console.log(req.params);
+
+  const oneUser = usersServices.getUserByMail(mail);
   if (!oneUser) {
     res.status(404).send("NO ENCONTRADO");
     return;
@@ -67,6 +79,7 @@ const updateUser = (req, res, next) => {
 
 module.exports = {
   getAllUsers,
+  getOneUserByMail,
   insertOneUser,
   getOneUser,
   deleteUser,

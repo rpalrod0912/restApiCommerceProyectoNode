@@ -9,25 +9,51 @@ const getAllProduct = (req, res, next) => {
   }
   res.send(allProducts);
 };
+
+const getColors = (req, res, next) => {
+  const getColors = productosServices.getColorsProducts();
+  if (!getColors) {
+    res.status(404).send("NO HAY TALLAS");
+    return;
+  }
+  res.send(getColors);
+};
+
+const getSizes = (req, res, next) => {
+  const getSizes = productosServices.getSizesProducts();
+  if (!getSizes) {
+    res.status(404).send("NO HAY TALLAS");
+    return;
+  }
+  res.send(getSizes);
+};
+
+const getSaleProducts = (req, res, next) => {
+  const saleProducts = productosServices.getSaleProducts();
+  if (!saleProducts) {
+    res.status(404).send("NO HAY PRODUCTOS EN OFEERTA");
+    return;
+  }
+  res.send(saleProducts);
+};
+
 const insertOneProduct = (req, res, next) => {
+  console.log(req.body);
 
-    console.log(req.body)
+  const { nombre, precio } = req.body;
 
-    const {nombre, precio} = req.body
+  if (!nombre || !precio) {
+    res.status(400).send("FALTAN DATOS");
+    return;
+  }
 
-    if(!nombre || !precio){
-        res.status(400).send("FALTAN DATOS")
-        return
-    }
+  const newProduct = productosServices.insertOneProduct(nombre, precio);
+  if (!newProduct) {
+    res.status(400).send("ENTRADA DUPLICADA");
+    return;
+  }
 
-    const newProduct = productosServices.insertOneProduct(nombre, precio)
-    if(!newProduct){
-        res.status(400).send("ENTRADA DUPLICADA");
-        return
-    }
-
-    res.send(newProduct)
-
+  res.send(newProduct);
 };
 const getOneProduct = (req, res, next) => {
   const { prod } = req.params;
@@ -53,4 +79,7 @@ module.exports = {
   getOneProduct,
   deleteOneProduct,
   updateOneProduct,
+  getSaleProducts,
+  getSizes,
+  getColors,
 };

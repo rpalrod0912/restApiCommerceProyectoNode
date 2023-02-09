@@ -7,8 +7,18 @@ const getAllProduct = () => {
   const productos = productosModelo.getAllProduct();
   return productos;
 };
+
+const getColorsProducts = () => {
+  const colorsProducts = productosModelo.getColorOrderProducts();
+  return colorsProducts;
+};
+
+const getSaleProducts = () => {
+  const saleProducts = productosModelo.getSaleProducts();
+  return saleProducts;
+};
+
 const insertOneProduct = (nombre, precio) => {
-  
   const idProducto = uuid();
   const fecha_alta = new Date().toLocaleDateString();
   let fecha_cad = new Date();
@@ -46,4 +56,6 @@ module.exports = {
   getOneProduct,
   deleteOneProduct,
   updateOneProduct,
+  getSaleProducts,
+  getColorsProducts,
 };

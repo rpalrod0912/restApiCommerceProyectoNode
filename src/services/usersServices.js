@@ -30,6 +30,12 @@ const getUser = (idUser) => {
   return oneUsuario;
 };
 
+const getUserByMail = (mailUser) => {
+  const oneUsuario = userModelos.oneUserByMail(mailUser);
+  console.log(oneUsuario);
+  return oneUsuario;
+};
+
 const deleteOneUser = (id) => {
   console.log(id);
   const user = userModelos.deleteOneUser(id);
@@ -52,4 +58,5 @@ module.exports = {
   getUser,
   deleteOneUser,
   updateOneUser,
+  getUserByMail,
 };
