@@ -10,6 +10,15 @@ const getAllProduct = (req, res, next) => {
   res.send(allProducts);
 };
 
+const getAllPages = (req, res, next) => {
+  const getPages = productosServices.getProductsPage();
+  if (!getPages) {
+    res.status(404).send("NO HAY TALLAS");
+    return;
+  }
+  res.send(getPages);
+};
+
 const getColors = (req, res, next) => {
   const getColors = productosServices.getColorsProducts();
   if (!getColors) {
@@ -26,6 +35,17 @@ const getSizes = (req, res, next) => {
     return;
   }
   res.send(getSizes);
+};
+
+const getPaginatedProducts = (req, res, next) => {
+  const { pagina } = req.params;
+  const productsByPage = productosServices.getProdByPage(pagina);
+  if (!productsByPage) {
+    res.status(404).send("NO HAY PRODUCTOS EN ESA PAGINA");
+    return;
+  }
+
+  res.send(productsByPage);
 };
 
 const getSaleProducts = (req, res, next) => {
@@ -80,6 +100,8 @@ module.exports = {
   deleteOneProduct,
   updateOneProduct,
   getSaleProducts,
+  getPaginatedProducts,
   getSizes,
   getColors,
+  getAllPages,
 };

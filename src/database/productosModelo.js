@@ -7,6 +7,21 @@ const getAllProduct = () => {
   return datos.productos;
 };
 
+const getWebPages = () => {
+  let endIndex = 11;
+  const arrPages = {
+    1: datos.productos.slice(0, 11),
+    2: datos.productos.slice(12, 12 + endIndex),
+    3: datos.productos.slice(24, 24 + endIndex),
+  };
+  return arrPages;
+};
+
+const getPagedOrderProducts = (page) => {
+  const objetoPagina = getWebPages()[page];
+  return objetoPagina;
+};
+
 const getSizeOrderProducts = () => {
   let tallasArr = {
     35: datos.productos.filter((objeto) => {
@@ -122,4 +137,6 @@ module.exports = {
   getSaleProducts,
   getColorOrderProducts,
   getSizeOrderProducts,
+  getPagedOrderProducts,
+  getWebPages,
 };

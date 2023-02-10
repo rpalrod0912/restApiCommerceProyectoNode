@@ -11,6 +11,9 @@ router
 //GET OFERTAS
 router.route("/ofertas").get(productosController.getSaleProducts);
 
+router.route("/paginas/:pagina").get(productosController.getPaginatedProducts);
+router.route("/paginas").get(productosController.getAllPages);
+
 router.route("/tallas").get(productosController.getSizes);
 router.route("/colores").get(productosController.getColors);
 

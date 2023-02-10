@@ -8,9 +8,19 @@ const getAllProduct = () => {
   return productos;
 };
 
+const getProductsPage = () => {
+  const pages = productosModelo.getWebPages();
+  return pages;
+};
+
 const getColorsProducts = () => {
   const colorsProducts = productosModelo.getColorOrderProducts();
   return colorsProducts;
+};
+
+const getProdByPage = (page) => {
+  const pagedProducts = productosModelo.getPagedOrderProducts(page);
+  return pagedProducts;
 };
 
 const getSaleProducts = () => {
@@ -63,5 +73,7 @@ module.exports = {
   updateOneProduct,
   getSaleProducts,
   getColorsProducts,
+  getProdByPage,
   getSizesProducts,
+  getProductsPage,
 };
