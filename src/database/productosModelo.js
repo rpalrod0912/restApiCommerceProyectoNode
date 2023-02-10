@@ -8,11 +8,11 @@ const getAllProduct = () => {
 };
 
 const getWebPages = () => {
-  let endIndex = 11;
+  let endIndex = 12;
   const arrPages = {
-    1: datos.productos.slice(0, 11),
-    2: datos.productos.slice(12, 12 + endIndex),
-    3: datos.productos.slice(24, 24 + endIndex),
+    1: datos.productos.slice(0, endIndex),
+    2: datos.productos.slice(13, 13 + endIndex),
+    3: datos.productos.slice(25, 25 + endIndex),
   };
   return arrPages;
 };
