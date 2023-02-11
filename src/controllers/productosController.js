@@ -76,7 +76,7 @@ const insertOneProduct = (req, res, next) => {
   res.send(newProduct);
 };
 const getOneProduct = (req, res, next) => {
-  const { prod } = req.params;
+  const { prodName } = req.params;
 
   const oneProduct = productosServices.getOneProduct(prod);
 

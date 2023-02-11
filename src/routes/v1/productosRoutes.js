@@ -14,11 +14,13 @@ router.route("/ofertas").get(productosController.getSaleProducts);
 router.route("/paginas/:pagina").get(productosController.getPaginatedProducts);
 router.route("/paginas").get(productosController.getAllPages);
 
+router.route("/");
+
 router.route("/tallas").get(productosController.getSizes);
 router.route("/colores").get(productosController.getColors);
 
 router
-  .route("/:prod")
+  .route("/:prodName")
   .get(productosController.getOneProduct) //GET ONE PRODUCT
   .delete() //DELETE ONE PRODUCT
   .put(); //UPDATE ONE PRODUT

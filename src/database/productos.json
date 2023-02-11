@@ -25,7 +25,7 @@
       "utilidad": "Baloncesto",
       "marca": "Nike",
       "sexo": "Unisex",
-      "color": ["Rojo", "Blanco", "Azul", "Negro", "Blanco", "Negro"],
+      "color": ["Rojo", "Blanco", "Azul", "Negro"],
       "talla": [37, 36, 38, 40],
       "imagen": "https://i.ibb.co/PhQVSy1/jordan1.png"
     },
@@ -98,7 +98,7 @@
       "utilidad": "Running",
       "marca": "Adidas",
       "sexo": "Unisex",
-      "color": ["Negro", "Blanco", "AzulClaro", "Verde", "Gris"],
+      "color": ["Negro", "Blanco", "Azul", "Verde", "Gris"],
       "talla": [38, 39, 44, 45, 45, 46, 47, 47, 48, 48, 49, 50],
       "imagen": "https://i.ibb.co/Wy49mwF/eac24c2f11924b109410ae890008cb01-9366.webp"
     },
@@ -113,7 +113,7 @@
       "utilidad": "Casual",
       "marca": "Adidas",
       "sexo": "Unisex",
-      "color": ["Gris", "Negro", "Blanco", "Negro", "Rosa", "Azul"],
+      "color": ["Gris", "Negro", "Blanco", "Rosa", "Azul"],
       "talla": ["S", "M", "L", "XL"],
       "imagen": "https://i.ibb.co/HpB4hpV/sudadera-Adidas-Or.png"
     },
@@ -245,7 +245,7 @@
       "utilidad": "Baloncesto",
       "marca": "Nike",
       "sexo": "Unisex",
-      "color": ["Rojo", "Blanco", "Azul", "Negro", "Blanco", "Negro"],
+      "color": ["Rojo", "Blanco", "Azul", "Negro"],
       "talla": [37, 36, 38, 40],
       "imagen": "https://i.ibb.co/PhQVSy1/jordan1.png"
     },
@@ -318,7 +318,7 @@
       "utilidad": "Running",
       "marca": "Adidas",
       "sexo": "Unisex",
-      "color": ["Negro", "Blanco", "AzulClaro", "Verde", "Gris"],
+      "color": ["Negro", "Blanco", "Azul", "Verde", "Gris"],
       "talla": [38, 39, 44, 45, 45, 46, 47, 47, 48, 48, 49, 50],
       "imagen": "https://i.ibb.co/Wy49mwF/eac24c2f11924b109410ae890008cb01-9366.webp"
     },
@@ -333,7 +333,7 @@
       "utilidad": "Casual",
       "marca": "Adidas",
       "sexo": "Unisex",
-      "color": ["Gris", "Negro", "Blanco", "Negro", "Rosa", "Azul"],
+      "color": ["Gris", "Negro", "Blanco", "Rosa", "Azul"],
       "talla": ["S", "M", "L", "XL"],
       "imagen": "https://i.ibb.co/HpB4hpV/sudadera-Adidas-Or.png"
     },
