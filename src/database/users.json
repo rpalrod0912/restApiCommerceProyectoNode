@@ -17,6 +17,36 @@
       "nombre": "maria",
       "mail": "marihuana@gmail.com",
       "pwd": "4243"
+    },
+    {
+      "idUser": "3351b330-ab02-11ed-bcbc-7b3893459a69",
+      "nombre": "Rafael",
+      "mail": "rafapr0001@gmail.com",
+      "pwd": "Rafapr_01#"
+    },
+    {
+      "idUser": "bbeebbb0-ab03-11ed-ac2d-d16dec27bc7e",
+      "nombre": "Rafael",
+      "mail": "rafapr0001@hotmail.com",
+      "pwd": "Rfapr_01#"
+    },
+    {
+      "idUser": "2c02e700-ab04-11ed-9740-f9dee243f044",
+      "nombre": "Rafael",
+      "mail": "cocaina@gmail.com",
+      "pwd": "Rfapr_01#"
+    },
+    {
+      "idUser": "ed046320-ab04-11ed-a57f-3d3cb46032b7",
+      "nombre": "Rafael",
+      "mail": "rafapr001@gmail.com",
+      "pwd": "Rafapr_01#"
+    },
+    {
+      "idUser": "0af9e990-ab05-11ed-8ef8-adf41e82dfa0",
+      "nombre": "Rafael",
+      "mail": "rafapr1@gmail.com",
+      "pwd": "Rafapr_01#"
     }
   ]
 }

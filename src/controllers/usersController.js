@@ -1,4 +1,8 @@
 const usersServices = require("../services/usersServices");
+const jwt = require("jsonwebtoken");
+const dotenv = require("dotenv");
+
+const accessToken = dotenv.config().parsed.SECRET_TOKEN;
 
 const getAllUsers = (req, res, next) => {
   const allUsers = usersServices.getUsers();
@@ -18,26 +22,34 @@ const getOneUserLogIn = (req, res, next) => {
     res.send(JSON.stringify("NOTFOUND"));
     return;
   }
+  const keyJWT = jwt.sign(
+    { mail: oneUser.mail, pwd: oneUser.pwd },
+    accessToken
+  );
+  oneUser.token = keyJWT;
   res.send(oneUser);
 };
 const insertOneUser = (req, res, next) => {
-  console.log(req.body);
-  console.log(req.body);
-
-  const { name, email, password } = req.body;
+  const { name, mail, password } = req.body;
   console.log(name);
-  if (!name || !email || !password) {
+  console.log(mail);
+  console.log(password);
+
+  if (!name || !mail || !password) {
     res.status(400).send("FALTAN DATOS PORA INSERTAR USUARIIOS");
     return;
   }
 
-  const newUser = usersServices.insertUser(name, email, password);
+  const newUser = usersServices.insertUser(name, mail, password);
+  console.log(newUser);
   if (!newUser) {
     res.status(400).send("ENTRADA DUPLICADA");
     return;
   }
 
-  res.send(newUser);
+  if (newUser === "YAEXISTE") {
+    res.send(newUser);
+  }
 };
 
 const getOneUser = (req, res, next) => {

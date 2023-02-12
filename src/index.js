@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const v1 = require("./routes/v1/indexRoutes");
-//const auth = require("./utils/authentication");
 
+//const auth = require("./utils/authentication");
 const cors = require("cors");
 const corOptions = {
   origin: "*",

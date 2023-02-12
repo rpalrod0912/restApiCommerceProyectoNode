@@ -21,6 +21,7 @@ const insertUser = (nombre, mail, pwd) => {
     mail,
     pwd,
   };
+  console.log(nuevoUsuario);
 
   if (userModelos.getOneUser(nuevoUsuario.idUser)) {
     return false;
