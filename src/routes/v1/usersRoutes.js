@@ -14,6 +14,8 @@ router
   .delete(usersController.deleteUser)
   .patch(usersController.updateUser);
 
+router.route("/login/:mailAndPwd").get(usersController.getOneUserLogIn);
+
 router.route("/:mail").get(usersController.getOneUserByMail);
 
 module.exports.router = router;

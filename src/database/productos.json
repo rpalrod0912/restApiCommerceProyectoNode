@@ -40,18 +40,7 @@
       "utilidad": "Baloncesto",
       "marca": "Adidas",
       "sexo": "Unisex",
-      "color": [
-        "Rojo",
-        "Blanco",
-        "Azul",
-        "Blanco",
-        "Blanco",
-        "Negro",
-        "Blanco",
-        "Verde",
-        "Blanco",
-        "Negro"
-      ],
+      "color": ["Rojo", "Blanco", "Azul", "Verde"],
       "talla": [
         38, 39, 40, 40, 41, 42, 42, 42, 44, 44, 45, 45, 46, 47, 47, 48, 48, 49
       ],

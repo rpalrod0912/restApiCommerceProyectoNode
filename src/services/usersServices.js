@@ -6,6 +6,11 @@ const getUsers = () => {
   return usuarios;
 };
 
+const getUserLogIn = (mailAndPwd) => {
+  const usuario = userModelos.getLogInUser(mailAndPwd);
+  return usuario;
+};
+
 const insertUser = (nombre, mail, pwd) => {
   const idUser = uuid();
   const fecha_alta = new Date().toLocaleDateString();
@@ -59,4 +64,5 @@ module.exports = {
   deleteOneUser,
   updateOneUser,
   getUserByMail,
+  getUserLogIn,
 };

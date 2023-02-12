@@ -9,6 +9,17 @@ const getAllUsers = (req, res, next) => {
   res.send(allUsers);
 };
 
+const getOneUserLogIn = (req, res, next) => {
+  console.log(req.params);
+  const { mailAndPwd } = req.params;
+  console.log(mailAndPwd);
+  const oneUser = usersServices.getUserLogIn(mailAndPwd);
+  if (!oneUser) {
+    res.send(JSON.stringify("NOTFOUND"));
+    return;
+  }
+  res.send(oneUser);
+};
 const insertOneUser = (req, res, next) => {
   console.log(req.body);
   console.log(req.body);
@@ -84,4 +95,5 @@ module.exports = {
   getOneUser,
   deleteUser,
   updateUser,
+  getOneUserLogIn,
 };
