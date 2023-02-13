@@ -6,17 +6,16 @@ const getUsers = () => {
   return usuarios;
 };
 
-const getUserLogIn = (mailAndPwd) => {
-  const usuario = userModelos.getLogInUser(mailAndPwd);
+const getUserLogIn = (mail) => {
+  const usuario = userModelos.getLogInUser(mail);
   return usuario;
 };
 
-const insertUser = (nombre, mail, pwd) => {
-  const idUser = uuid();
+const insertUser = (id, nombre, mail, pwd) => {
   const fecha_alta = new Date().toLocaleDateString();
 
   const nuevoUsuario = {
-    idUser,
+    idUser: id,
     nombre,
     mail,
     pwd,

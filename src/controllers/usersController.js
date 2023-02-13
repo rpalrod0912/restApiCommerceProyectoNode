@@ -15,32 +15,33 @@ const getAllUsers = (req, res, next) => {
 
 const getOneUserLogIn = (req, res, next) => {
   console.log(req.params);
-  const { mailAndPwd } = req.params;
-  console.log(mailAndPwd);
-  const oneUser = usersServices.getUserLogIn(mailAndPwd);
+  const { mail } = req.params;
+
+  const oneUser = usersServices.getUserLogIn(mail);
   if (!oneUser) {
     res.send(JSON.stringify("NOTFOUND"));
     return;
   }
+  /*
   const keyJWT = jwt.sign(
     { mail: oneUser.mail, pwd: oneUser.pwd },
     accessToken
   );
-  oneUser.token = keyJWT;
+  oneUser.token = keyJWT;*/
   res.send(oneUser);
 };
 const insertOneUser = (req, res, next) => {
-  const { name, mail, password } = req.body;
+  const { id, name, mail, password } = req.body;
   console.log(name);
   console.log(mail);
   console.log(password);
 
-  if (!name || !mail || !password) {
+  if (!id || !name || !mail || !password) {
     res.status(400).send("FALTAN DATOS PORA INSERTAR USUARIIOS");
     return;
   }
 
-  const newUser = usersServices.insertUser(name, mail, password);
+  const newUser = usersServices.insertUser(id, name, mail, password);
   console.log(newUser);
   if (!newUser) {
     res.status(400).send("ENTRADA DUPLICADA");

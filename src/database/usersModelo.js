@@ -9,14 +9,13 @@ const getOneUser = (idUser) => {
   return datos.users[idUser];
 };
 
-const getLogInUser = (mailAndPwd) => {
-  const [mail, pwd] = mailAndPwd.split("&");
-  const userLogInIndex = datos.users.findIndex((objeto) => {
-    return objeto.mail === mail && objeto.pwd === pwd;
+const getLogInUser = (mail) => {
+  var userByMail = datos.users.find((objeto) => {
+    return objeto.mail === mail;
   });
 
-  const finalUser = datos.users[userLogInIndex];
-  return finalUser;
+  console.log(userByMail);
+  return userByMail;
 };
 
 const oneUserByMail = (mailUser) => {
