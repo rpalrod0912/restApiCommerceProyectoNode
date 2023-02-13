@@ -1,48 +1,6 @@
 {
   "users": [
     {
-      "idUser": "c113eee0-a6d4-11ed-bd56-b5715859c8df",
-      "nombre": "puta",
-      "mail": "meCorro@gmail.com",
-      "pwd": "puta"
-    },
-    {
-      "idUser": "48a04480-a6f3-11ed-9765-81a6d4d08d38",
-      "nombre": "guarrilla",
-      "mail": "pruebapatch@gmail.com",
-      "pwd": "Prueba2345"
-    },
-    {
-      "idUser": "5ae87180-a6f3-11ed-bf15-6fe95562dcaf",
-      "nombre": "maria",
-      "mail": "marihuana@gmail.com",
-      "pwd": "4243"
-    },
-    {
-      "idUser": "3351b330-ab02-11ed-bcbc-7b3893459a69",
-      "nombre": "Rafael",
-      "mail": "rafapr0001@gmail.com",
-      "pwd": "Rafapr_01#"
-    },
-    {
-      "idUser": "bbeebbb0-ab03-11ed-ac2d-d16dec27bc7e",
-      "nombre": "Rafael",
-      "mail": "rafapr0001@hotmail.com",
-      "pwd": "Rfapr_01#"
-    },
-    {
-      "idUser": "2c02e700-ab04-11ed-9740-f9dee243f044",
-      "nombre": "Rafael",
-      "mail": "cocaina@gmail.com",
-      "pwd": "Rfapr_01#"
-    },
-    {
-      "idUser": "ed046320-ab04-11ed-a57f-3d3cb46032b7",
-      "nombre": "Rafael",
-      "mail": "rafapr001@gmail.com",
-      "pwd": "Rafapr_01#"
-    },
-    {
       "idUser": "0af9e990-ab05-11ed-8ef8-adf41e82dfa0",
       "nombre": "Rafael",
       "mail": "rafapr1@gmail.com",
@@ -69,6 +27,12 @@
       "idUser": "aZsTcscuv9Rz3pshA7bYZSU6WTI2",
       "nombre": "Rafael",
       "mail": "rafapr000123@gmail.com",
+      "pwd": "Rafapr_01"
+    },
+    {
+      "idUser": "B1vBxJzdJ4Zx1IOLNc29LZCej4t2",
+      "nombre": "Rafael",
+      "mail": "rafapr0001@gmail.com",
       "pwd": "Rafapr_01"
     }
   ]

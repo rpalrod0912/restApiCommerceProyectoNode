@@ -1,0 +1,11 @@
+{
+  "carritos": [
+    {
+      "userId": "B1vBxJzdJ4Zx1IOLNc29LZCej4t2",
+      "cesta": [
+        { "idProducto": "product1", "cantidad": 2 },
+        { "idProducto": "product2", "cantidad": 3 }
+      ]
+    }
+  ]
+}

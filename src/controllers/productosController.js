@@ -75,10 +75,11 @@ const insertOneProduct = (req, res, next) => {
 
   res.send(newProduct);
 };
-const getOneProduct = (req, res, next) => {
-  const { prodName } = req.params;
 
-  const oneProduct = productosServices.getOneProduct(prod);
+const getOneProduct = (req, res, next) => {
+  const { id } = req.params;
+
+  const oneProduct = productosServices.getOneProduct(id);
 
   if (!oneProduct) {
     res.status(404).send("NO ENCONTRADO");

@@ -20,7 +20,7 @@ router.route("/tallas").get(productosController.getSizes);
 router.route("/colores").get(productosController.getColors);
 
 router
-  .route("/:prodName")
+  .route("/:id")
   .get(productosController.getOneProduct) //GET ONE PRODUCT
   .delete() //DELETE ONE PRODUCT
   .put(); //UPDATE ONE PRODUT

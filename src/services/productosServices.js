@@ -57,8 +57,8 @@ const insertOneProduct = (nombre, precio) => {
   return insertedProduct;
 };
 
-const getOneProduct = (nombreProducto) => {
-  const oneProduct = productosModelo.getOneProduct(nombreProducto);
+const getOneProduct = (id) => {
+  const oneProduct = productosModelo.getOneProduct(id);
 
   return oneProduct;
 };

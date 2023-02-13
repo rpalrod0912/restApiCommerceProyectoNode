@@ -103,8 +103,11 @@ const getColorOrderProducts = () => {
   return colorsArr;
 };
 
-const getOneProduct = (nombreProducto) => {
-  return datos.productos[nombreProducto];
+const getOneProduct = (id) => {
+  var userById = datos.productos.find((objeto) => {
+    return objeto.id === id;
+  });
+  return userById;
 };
 
 const getSaleProducts = () => {
