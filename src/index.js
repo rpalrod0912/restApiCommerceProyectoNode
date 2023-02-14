@@ -9,8 +9,9 @@ const corOptions = {
   credentials: true,
   optionSuccessStatus: 200,
 };
-
-app.use(cors(corOptions));
+//Conectar
+//rpalrodcommerceapi.onrender.com/v1/api/users
+https: app.use(cors(corOptions));
 app.use(express.json());
 //app.use(auth.login)
 app.use("/v1/api", v1.router);

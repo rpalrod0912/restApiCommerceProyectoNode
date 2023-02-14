@@ -21,7 +21,19 @@ const getCart = (req, res, next) => {
   res.send(oneCart);
 };
 
+const insertProduct = (req, res, next) => {
+  const { userId, idProducto } = req.params;
+  console.log(req.params);
+  const añadido = cartsServices.addProduct(userId, idProducto);
+  if (!añadido) {
+    res.status(404).send("NO ENCONTRADO");
+    return;
+  }
+  res.send(añadido);
+};
+
 module.exports = {
   getAllCarts,
   getCart,
+  insertProduct,
 };
