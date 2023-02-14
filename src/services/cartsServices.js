@@ -10,11 +10,12 @@ const getOneCart = (id) => {
   return oneCart;
 };
 const addProduct = (userId, idProducto) => {
-  const addedProd = cartsModelo.postProduct(userId, idProducto);
-  return addProduct;
+  const addedProduct = cartsModelo.postProduct(userId, idProducto);
+  return addedProduct;
 };
 
 module.exports = {
   getAllCarts,
   getOneCart,
+  addProduct,
 };

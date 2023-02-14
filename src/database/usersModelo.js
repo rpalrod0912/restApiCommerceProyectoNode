@@ -1,5 +1,6 @@
 const datos = require("./users.json");
 const fs = require("fs");
+const crearCarrito = require("./carrito.json");
 
 const getAllUsers = () => {
   return datos.users;
@@ -36,6 +37,18 @@ const insertOneUser = (newUser) => {
     console.log(verifRep);
     datos.users.push(newUser);
     console.log(newUser);
+    crearCarrito.carritos.push({
+      userId: newUser.idUser,
+      cesta: [],
+    });
+    fs.writeFile(
+      "./src/database/carrito.json",
+      JSON.stringify(crearCarrito, null, 2),
+      "utf8",
+      (err) => {
+        throw new Error("ERROR AL CREAR CARRITO");
+      }
+    );
     fs.writeFile(
       "./src/database/users.json",
       JSON.stringify(datos, null, 2),

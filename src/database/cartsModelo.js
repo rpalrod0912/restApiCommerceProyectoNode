@@ -17,6 +17,7 @@ const postProduct = (userId, idProducto) => {
     userId,
     idProducto,
   };
+  console.log(datosCarrito);
   const userIndex = datos.carritos.findIndex((usuario) => {
     return usuario.userId === userId;
   });
@@ -28,11 +29,11 @@ const postProduct = (userId, idProducto) => {
 
   if (userIndex === -1) {
     datos.carritos.push({
-      userId: userId,
-      cesta: [{ idProducto: idProducto, cantidad: 1 }],
+      userId,
+      cesta: [{ idProducto, cantidad: 1 }],
     });
     fs.writeFile(
-      "./src/database/users.json",
+      "./src/database/carrito.json",
       JSON.stringify(datos, null, 2),
       "utf8",
       (err) => {
@@ -41,9 +42,11 @@ const postProduct = (userId, idProducto) => {
     );
     return datos.carritos[userIndex];
   } else if (productoExiste !== -1) {
+    console.log("ANFETAS");
+
     datos.carritos[userIndex].cesta[productoExiste].cantidad += 1;
     fs.writeFile(
-      "./src/database/users.json",
+      "./src/database/carrito.json",
       JSON.stringify(datos, null, 2),
       "utf8",
       (err) => {
@@ -52,12 +55,14 @@ const postProduct = (userId, idProducto) => {
     );
     return datos.carritos;
   } else if (productoExiste === -1) {
+    console.log(datosCarrito.idProducto);
+    console.log("HEROINA");
     datos.carritos[userIndex].cesta.push({
-      idProducto: idProducto,
+      idProducto: datosCarrito.idProducto,
       cantidad: 1,
     });
     fs.writeFile(
-      "./src/database/users.json",
+      "./src/database/carrito.json",
       JSON.stringify(datos, null, 2),
       "utf8",
       (err) => {
@@ -71,4 +76,5 @@ const postProduct = (userId, idProducto) => {
 module.exports = {
   getAll,
   getCart,
+  postProduct,
 };

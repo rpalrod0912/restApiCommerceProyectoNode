@@ -22,9 +22,9 @@ const getCart = (req, res, next) => {
 };
 
 const insertProduct = (req, res, next) => {
-  const { userId, idProducto } = req.params;
-  console.log(req.params);
-  const añadido = cartsServices.addProduct(userId, idProducto);
+  const { userId, idProduct } = req.body;
+  console.log(userId);
+  const añadido = cartsServices.addProduct(userId, idProduct);
   if (!añadido) {
     res.status(404).send("NO ENCONTRADO");
     return;
