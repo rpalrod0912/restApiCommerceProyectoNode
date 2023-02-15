@@ -10,6 +10,16 @@ const getAllCarts = (req, res, next) => {
   res.send(carts);
 };
 
+const deleteProduct = (req, res, next) => {
+  const { userId, idProduct } = req.body;
+  console.log(userId);
+  const eliminado = cartsServices.delProduct(userId, idProduct);
+  if (!eliminado) {
+    res.status(404).send("NO ENCONTRADO");
+    return;
+  }
+  res.send(eliminado);
+};
 const getCart = (req, res, next) => {
   const { userId } = req.params;
 
@@ -36,4 +46,5 @@ module.exports = {
   getAllCarts,
   getCart,
   insertProduct,
+  deleteProduct,
 };

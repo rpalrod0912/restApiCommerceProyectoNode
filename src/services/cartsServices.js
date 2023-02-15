@@ -4,7 +4,10 @@ const getAllCarts = () => {
   const carritos = cartsModelo.getAll();
   return carritos;
 };
-
+const delProduct = (userId, idProduct) => {
+  const deletedProduct = cartsModelo.deleteProd(userId, idProduct);
+  return deletedProduct;
+};
 const getOneCart = (id) => {
   const oneCart = cartsModelo.getCart(id);
   return oneCart;
@@ -18,4 +21,5 @@ module.exports = {
   getAllCarts,
   getOneCart,
   addProduct,
+  delProduct,
 };

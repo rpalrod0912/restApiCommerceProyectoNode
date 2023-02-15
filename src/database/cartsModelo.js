@@ -12,6 +12,33 @@ const getCart = (id) => {
   return cartById;
 };
 
+const deleteProd = (userId, idProducto) => {
+  const datosCarrito = {
+    userId,
+    idProducto,
+  };
+  const userIndex = datos.carritos.findIndex((usuario) => {
+    return usuario.userId === userId;
+  });
+  const cestaUsuario = datos.carritos[userIndex].cesta;
+
+  const indiceProducto = cestaUsuario.findIndex((producto) => {
+    return producto.idProducto === idProducto;
+  });
+  if (indiceProducto !== -1) {
+    datos.carritos[userIndex].cesta.splice(indiceProducto, 1);
+    fs.writeFile(
+      "./src/database/carrito.json",
+      JSON.stringify(datos, null, 2),
+      "utf8",
+      (err) => {
+        throw new Error("ERROR AL AÑADIR PRODUCTO");
+      }
+    );
+    return datos.carritos[userIndex];
+  }
+};
+
 const postProduct = (userId, idProducto) => {
   const datosCarrito = {
     userId,
@@ -77,4 +104,5 @@ module.exports = {
   getAll,
   getCart,
   postProduct,
+  deleteProd,
 };

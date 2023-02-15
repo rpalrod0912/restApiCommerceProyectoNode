@@ -5,11 +5,11 @@
       "cesta": [
         {
           "idProducto": "product1",
-          "cantidad": 2
+          "cantidad": 7
         },
         {
           "idProducto": "product2",
-          "cantidad": 3
+          "cantidad": 4
         },
         {
           "idProducto": "product5",
@@ -21,7 +21,11 @@
         },
         {
           "idProducto": "product7",
-          "cantidad": 1
+          "cantidad": 2
+        },
+        {
+          "idProducto": "product8",
+          "cantidad": 3
         }
       ]
     },
@@ -29,19 +33,31 @@
       "userId": "hmkgb9sK1LhyIdlunegPFYhPmwj1",
       "cesta": [
         {
-          "idProducto": "product1",
-          "cantidad": 1
-        },
-        {
-          "idProducto": "product8",
-          "cantidad": 1
-        },
-        {
           "idProducto": "product11",
           "cantidad": 2
         },
         {
           "idProducto": "product12",
+          "cantidad": 3
+        },
+        {
+          "idProducto": "product7",
+          "cantidad": 1
+        },
+        {
+          "idProducto": "product3",
+          "cantidad": 6
+        },
+        {
+          "idProducto": "product2",
+          "cantidad": 7
+        },
+        {
+          "idProducto": "product4",
+          "cantidad": 2
+        },
+        {
+          "idProducto": "product5",
           "cantidad": 3
         }
       ]
