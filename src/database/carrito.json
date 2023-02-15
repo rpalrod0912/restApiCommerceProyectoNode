@@ -43,6 +43,10 @@
         {
           "idProducto": "product8",
           "cantidad": 10
+        },
+        {
+          "idProducto": "product22",
+          "cantidad": 2
         }
       ]
     }
