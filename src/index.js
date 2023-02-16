@@ -11,7 +11,7 @@ const cors = require("cors");
 
 //Conectar
 //rpalrodcommerceapi.onrender.com/v1/api/users
-app.use(cors({ origin: "https://rpalrodcommerceapi.onrender.com/" }));
+app.use(cors({ origin: "*" }));
 app.options("*", cors());
 app.use(express.json());
 //app.use(auth.login)
