@@ -4,18 +4,6 @@
       "userId": "B1vBxJzdJ4Zx1IOLNc29LZCej4t2",
       "cesta": [
         {
-          "idProducto": "product1",
-          "cantidad": 7
-        },
-        {
-          "idProducto": "product2",
-          "cantidad": 4
-        },
-        {
-          "idProducto": "product5",
-          "cantidad": 2
-        },
-        {
           "idProducto": "product10",
           "cantidad": 1
         },
@@ -24,8 +12,8 @@
           "cantidad": 2
         },
         {
-          "idProducto": "product8",
-          "cantidad": 3
+          "idProducto": "product26",
+          "cantidad": 1
         }
       ]
     },
@@ -41,14 +29,14 @@
           "cantidad": 2
         },
         {
-          "idProducto": "product8",
-          "cantidad": 10
-        },
-        {
-          "idProducto": "product22",
-          "cantidad": 2
+          "idProducto": "product27",
+          "cantidad": 1
         }
       ]
+    },
+    {
+      "userId": "7zfz0JYZKwQGI9vzJb74hNLpokA2",
+      "cesta": []
     }
   ]
 }

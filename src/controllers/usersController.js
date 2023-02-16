@@ -31,8 +31,9 @@ const getOneUserLogIn = (req, res, next) => {
   res.send(oneUser);
 };
 const insertOneUser = (req, res, next) => {
-  const { id, name, mail, password } = req.body;
+  const { id, name, lastName, mail, password } = req.body;
   console.log(name);
+  console.log(lastName);
   console.log(mail);
   console.log(password);
 
@@ -41,7 +42,7 @@ const insertOneUser = (req, res, next) => {
     return;
   }
 
-  const newUser = usersServices.insertUser(id, name, mail, password);
+  const newUser = usersServices.insertUser(id, name, lastName, mail, password);
   console.log(newUser);
   if (!newUser) {
     res.status(400).send("ENTRADA DUPLICADA");
@@ -54,10 +55,10 @@ const insertOneUser = (req, res, next) => {
 };
 
 const getOneUser = (req, res, next) => {
-  const { mail } = req.params;
+  const { id } = req.params;
   console.log(req.params);
 
-  const oneUser = usersServices.getUser(mail);
+  const oneUser = usersServices.getUser(id);
   if (!oneUser) {
     res.status(404).send("NO ENCONTRADO");
     return;

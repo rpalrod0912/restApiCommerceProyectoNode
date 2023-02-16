@@ -7,7 +7,11 @@ const getAllUsers = () => {
 };
 
 const getOneUser = (idUser) => {
-  return datos.users[idUser];
+  var userById = datos.users.find((objeto) => {
+    return objeto.idUser === idUser;
+  });
+
+  return userById;
 };
 
 const getLogInUser = (mail) => {
@@ -30,6 +34,7 @@ const oneUserByMail = (mailUser) => {
 };
 
 const insertOneUser = (newUser) => {
+  console.log(newUser);
   const verifRep = datos.users.find((objeto) => {
     return objeto.mail === newUser.mail;
   });

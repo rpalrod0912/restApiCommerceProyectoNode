@@ -11,12 +11,13 @@ const getUserLogIn = (mail) => {
   return usuario;
 };
 
-const insertUser = (id, nombre, mail, pwd) => {
+const insertUser = (id, nombre, lastName, mail, pwd) => {
   const fecha_alta = new Date().toLocaleDateString();
 
   const nuevoUsuario = {
     idUser: id,
     nombre,
+    lastName,
     mail,
     pwd,
   };

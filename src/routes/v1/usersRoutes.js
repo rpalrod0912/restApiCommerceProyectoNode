@@ -9,10 +9,11 @@ router
 
 router
   .route("/:id")
-  /*
-  .get(usersController.getOneUser)*/
+  /*.get(usersController.getOneUser)*/
   .delete(usersController.deleteUser)
   .patch(usersController.updateUser);
+
+router.route("/id/:id").get(usersController.getOneUser);
 
 router.route("/login/:mail").get(usersController.getOneUserLogIn);
 

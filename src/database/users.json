@@ -3,14 +3,23 @@
     {
       "idUser": "B1vBxJzdJ4Zx1IOLNc29LZCej4t2",
       "nombre": "Rafael",
+      "lastName": "Palomino",
       "mail": "rafapr0001@gmail.com",
       "pwd": "Rafapr_01"
     },
     {
       "idUser": "hmkgb9sK1LhyIdlunegPFYhPmwj1",
       "nombre": "maria",
+      "lastName": "galan",
       "mail": "maria@gmail.com",
       "pwd": "Rafapr_1"
+    },
+    {
+      "idUser": "7zfz0JYZKwQGI9vzJb74hNLpokA2",
+      "nombre": "farra",
+      "lastName": "dominguez",
+      "mail": "farra001@gmail.com",
+      "pwd": "Rafapr_01"
     }
   ]
 }
