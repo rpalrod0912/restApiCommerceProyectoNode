@@ -3,15 +3,11 @@ const app = express();
 const v1 = require("./routes/v1/indexRoutes");
 
 //const auth = require("./utils/authentication");
-/*const cors = require("cors");
-const corOptions = {
-  origin: "*",
-  credentials: true,
-  optionSuccessStatus: 200,
-};
+const cors = require("cors");
+
 //Conectar
 //rpalrodcommerceapi.onrender.com/v1/api/users
-https: app.use(cors(corOptions));*/
+app.use(cors());
 app.use(express.json());
 //app.use(auth.login)
 app.use("/v1/api", v1.router);
