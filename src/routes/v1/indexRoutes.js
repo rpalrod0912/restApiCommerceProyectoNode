@@ -3,6 +3,15 @@ const router = express.Router();
 const cartsRouter = require("./cartsRouter");
 const productosRoutes = require("./productosRoutes");
 const usersRouter = require("./usersRoutes");
+
+const cors = require("cors");
+const corOptions = {
+  origin: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+
+router.use(cors(corOptions));
 //URL AQUÍ: /v1/api
 router.get("/", (req, res, next) => {
   res.send("Hola Mundo");
