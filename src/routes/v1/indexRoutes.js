@@ -11,7 +11,6 @@ const corOptions = {
   optionSuccessStatus: 200,
 };
 
-router.use(cors(corOptions));
 //URL AQUÍ: /v1/api
 router.get("/", (req, res, next) => {
   res.send("Hola Mundo");
