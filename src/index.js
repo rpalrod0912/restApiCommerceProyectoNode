@@ -20,7 +20,7 @@ app.use(
     credentials: false,
   })
 );
-app.options("*", cors());
+
 app.use(express.json());
 //app.use(auth.login)
 app.use("/v1/api", v1.router);
