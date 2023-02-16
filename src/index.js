@@ -11,7 +11,7 @@ const cors = require("cors");
 
 //Conectar
 //rpalrodcommerceapi.onrender.com/v1/api/users
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "http://localhost:8080", credentials: true }));
 app.options("*", cors());
 app.use(express.json());
 //app.use(auth.login)
