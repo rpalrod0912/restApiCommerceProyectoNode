@@ -1,8 +1,7 @@
 const express = require("express");
 const app = express();
 const v1 = require("./routes/v1/indexRoutes");
-import cors from "cors";
-//const auth = require("./utils/authentication");
+const cors = require("cors"); //const auth = require("./utils/authentication");
 /*const corOptions = {
   origin: "*",
   credentials: true,
