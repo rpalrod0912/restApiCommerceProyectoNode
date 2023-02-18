@@ -68,17 +68,19 @@ const insertOneUser = (newUser) => {
   }
 };
 
-const updateOneUser = (id, name, mail, pwd) => {
-  console.log(id);
+const updateOneUser = (idUser, nombre, lastName, mail, pwd) => {
   const userToBeUpdatedIndex = datos.users.findIndex((objeto) => {
-    return objeto.idUser === id;
+    return objeto.idUser === idUser;
   });
-  console.log(name);
   console.log(datos.users[userToBeUpdatedIndex]);
-  if (name) {
-    datos.users[userToBeUpdatedIndex].nombre = name;
+  if (nombre) {
+    datos.users[userToBeUpdatedIndex].nombre = nombre;
   }
   console.log(mail);
+
+  if (lastName) {
+    datos.users[userToBeUpdatedIndex].lastName = lastName;
+  }
 
   if (mail) {
     datos.users[userToBeUpdatedIndex].mail = mail;

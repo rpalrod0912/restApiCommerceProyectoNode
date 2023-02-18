@@ -48,12 +48,9 @@ const deleteOneUser = (id) => {
   return user;
 };
 
-const updateOneUser = (id, nombre, mail, pwd) => {
-  console.log(id);
-  console.log(nombre);
-  console.log(mail);
+const updateOneUser = (idUser, nombre, lastName, mail, pwd) => {
   console.log(pwd);
-  const user = userModelos.updateOneUser(id, nombre, mail, pwd);
+  const user = userModelos.updateOneUser(idUser, nombre, lastName, mail, pwd);
   console.log(user);
   return user;
 };

@@ -90,14 +90,16 @@ const deleteUser = (req, res, next) => {
 };
 
 const updateUser = (req, res, next) => {
-  const { id } = req.params;
-  const { nombre, mail, pwd } = req.body;
+  const { idUser, nombre, lastName, mail, pwd } = req.body;
   console.log(req.body);
-  console.log(nombre);
-  console.log(mail);
-  console.log(pwd);
 
-  const updateUser = usersServices.updateOneUser(id, nombre, mail, pwd);
+  const updateUser = usersServices.updateOneUser(
+    idUser,
+    nombre,
+    lastName,
+    mail,
+    pwd
+  );
 
   res.send(updateUser);
 };
