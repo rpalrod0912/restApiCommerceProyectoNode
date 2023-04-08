@@ -6,6 +6,13 @@
       "lastName": "Palomino",
       "mail": "rafapr0001@gmail.com",
       "pwd": "Rafapr_01"
+    },
+    {
+      "idUser": "u1DECatuEBS632JyTHUk8GvkVxJ3",
+      "nombre": "Rafael",
+      "lastName": "Palomino",
+      "mail": "correo@gmail.com",
+      "pwd": "Rafapr_01#"
     }
   ]
 }
